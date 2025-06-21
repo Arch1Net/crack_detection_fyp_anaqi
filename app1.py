@@ -13,7 +13,7 @@ from datetime import datetime
 # Load trained model once
 @st.cache_resource
 def load_model():
-    return joblib.load(r"C:\Users\anaqi\Testing\trained_model_LogisticRegression.pkl") #<--------------- put your model here
+    return joblib.load("trained_model_LogisticRegression.pkl") #<--------------- put your model here
 
 model = load_model()
 
